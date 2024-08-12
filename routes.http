@@ -1,0 +1,40 @@
+
+GET http://localhost:3333/
+###
+GET http://localhost:3333/livros/
+
+###
+POST http://localhost:3333/livros
+Content-Type: application/json
+
+{
+  "title": "Livro 2",
+  "status": "i"
+}
+
+###
+POST http://localhost:3333/user
+Content-Type: application/json
+
+{
+  "name": "Miguel",
+  "email": "miguel@gmail.com",
+  "password":"092004"
+}
+
+###
+POST http://localhost:3333/login
+Content-Type: application/json
+
+{
+  "email": "lmj@gmail.com",
+  "password":"123456"
+}
+
+###
+PUT http://localhost:3333/livros/status/ee28e5d7-6c8e-461d-a240-b6d1e54409c2
+Content-Type: application/json
+
+{
+  "status": "i"
+}
