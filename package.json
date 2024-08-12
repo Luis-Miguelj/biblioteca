@@ -2,8 +2,10 @@
   "name": "api-deploy",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch --env-file .env src/server.ts",
     "build": "tsup src",
     "start": "node dist/server.js"
