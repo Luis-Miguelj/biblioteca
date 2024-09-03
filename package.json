@@ -2,6 +2,9 @@
   "name": "api-deploy",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
     "build": "tsup src",
